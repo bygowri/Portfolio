@@ -1,0 +1,757 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk&display=swap');
+.body {
+  font-family: 'Hanken Grotesk', sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+
+/* navbar styling */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 10px 200px; /* Add padding to the sides */
+  background-color: white;
+  font-family: 'Hanken Grotesk', sans-serif;
+  z-index: 3; /* Add a higher z-index value */
+}
+
+.navbar .max-width {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0%;
+}
+
+.navbar .top {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.navbar .home a {
+  font-size: 35px;
+  font-weight: 700;
+  color: black;
+  cursor: pointer;
+}
+.navbar .menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.navbar .menu li {
+  list-style: none;
+}
+
+.navbar .menu li a {
+  color: black;
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+/* home transition*/
+.navbar .home a:hover {
+  color: #2E2BC3;
+}
+
+.navbar .home a:active {
+  color: #2E2BC3;
+}
+
+
+
+
+
+.navbar .menu li {
+  list-style: none;
+  display: inline-block;
+  align-items: center;
+  position: relative;
+}
+
+.navbar .menu li a {
+  color: black;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0 30px;
+  position: relative;
+}
+
+/* menu transition */
+/* .navbar .menu li::after {
+  content: '';
+  height: 3px;
+  width: 0%;
+  background-color: #2E2BC3;
+  position: absolute;
+  left: 0%;
+  bottom: -5px;
+  transition: 0.5s;
+}
+
+.navbar .menu li:hover:after {
+  width: 100%;
+}
+
+.navbar .menu li:active:after {
+  width: 100%;
+} */
+
+/* mobile */
+/* Position toggle button on the right */
+.toggle-button {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+@media (max-width: 1000px) {
+  .toggle-button {
+    display: flex;
+  }
+
+  .navbar {
+    padding: 10px 20px; /* Add padding to the sides */
+  }
+  .navbar .home a {
+    font-size: 32px;
+    font-weight: 700;
+    color: black !important;
+    cursor: pointer;
+  }
+
+  .navbar .menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px;
+    width: 100%;
+    height: 100vh; /* Adjust the height as needed */
+    justify-content: center;
+  }
+  .navbar .menu li{
+    margin: 40px;
+  }
+  .navbar .menu li a{
+    font-size: 26px;
+  }
+
+  .navbar .max-width {
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 100%;
+
+  }
+  .menu.active{
+    display: flex;
+  }
+  #homepage {
+    display: block;
+    margin-top: 20px; /* Adjust spacing as needed */
+  }
+  
+}
+/* tablet */
+@media (min-width: 1001px) and (max-width: 1700px) {
+    .navbar {
+        padding: 10px 40px; /* Add padding to the sides */
+      }
+}
+
+/* home styling*/
+.homepage{
+    padding-left: 200px;
+    padding-right: 200px;
+    font-family: 'Hanken Grotesk', sans-serif;
+    max-width: 100%;
+    
+}
+.homepage .container{
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    padding-top: 20px;
+}
+.left-side{
+    max-width: 50%;
+    padding-top: 350px;
+    padding-right: 80px;
+}
+.left-side .all-text .text-1{
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.left-side .all-text .text-2{
+    font-size: 40px;
+    font-weight: 500;
+}
+.left-side .all-text .text-2 span{
+    font-weight: 700;
+}
+.left-side .all-text .text-3{
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+.left-side .all-text .text-4{
+    font-size: 24px;
+    font-weight: 500;
+}
+/*buttons*/
+.all-buttons{
+    padding-top: 30px;
+    justify-content: space-between;
+    display: inline-flex;
+    align-items: center;
+    width: 55%;
+    top: 0;
+    z-index: 100;
+}
+.resume-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color:#2E2BC3;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 500;
+}
+.all-buttons .social{
+    list-style: none;
+    display: inline-block;
+    align-items: center;
+    background-color: white;
+}
+.all-buttons .social a{
+    margin: 0 35px;
+}
+.container .right-side{
+    max-width: 50%;
+    padding-top: 50px;
+}
+.container .right-side img{
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+.image-wrapper {
+  position: relative;
+  display: inline-block;
+  z-index: 1; /* Add this line */
+}
+.second-image{
+  display: none;
+}
+.hover-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  z-index: 2; /* Add this line */
+}
+
+.image-wrapper:hover .hover-image {
+  opacity: 1;
+}
+
+
+
+/* mobile */
+@media (max-width: 1000px) {
+    /* Reversed layout for mobile devices */
+    .homepage{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .homepage .container {
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .left-side {
+      padding-top: 0;
+      padding-right: 0;
+      max-width: 100%;
+    }
+    
+    .left-side .all-text,
+    .left-side .all-buttons {
+      width: 100%;
+    }
+    .all-buttons {
+        padding-top: 50px;
+        justify-content: center;
+    }
+    .all-buttons .social{
+        display: none;
+    }
+    .all-text .text-1{
+        text-align: center;
+    }
+    .all-text .text-2{
+        text-align: center;
+        margin-bottom: 10px;        
+    }
+    .all-text .text-3{
+        text-align: center;
+    }
+    .left-side .all-text .text-4{
+        font-size: 20px;
+        font-weight: 500;
+    }
+    .container .right-side {
+      max-width: 100%;
+      margin-bottom: 10px;
+    }
+    .first-image{
+      display: none;
+    }
+    .hover-image{
+      display: none;
+    }
+    .second-image{
+      display: block;
+    }
+
+  }
+/* tablet */
+@media (min-width: 1001px) and (max-width: 1700px) {
+    .homepage {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+    .left-side{
+        max-width: 50%;
+        padding-top: 200px;
+        padding-right: 80px;
+    }
+    .all-buttons .social{
+        display: none;
+    }
+    .left-side .all-text .text-4{
+        font-size: 20px;
+        font-weight: 500;
+    }
+  }
+
+/*works section styling*/
+.works{
+    padding-top: 310px;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-bottom: 0px;
+}
+.works .max-width{
+    font-family: 'Hanken Grotesk',sans-serif;
+    max-width: 100%;
+    padding: 0%;
+}
+.works .max-width .text-2{
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 200px;
+}
+.works .topic-1{
+    background-color: white;
+}
+.works .works-container{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    
+}
+.works .description{
+    max-width: 70%;
+}
+.description .decathlon img{
+    max-width: 100%;
+    padding-right: 40px;
+}
+.works .text-and-buttons{
+    max-width: 30%;
+}
+.text-container h1{
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    padding-top: 20px;
+}
+.text-container p{
+    font-size: 24px;
+    font-weight: 400;
+}
+.text-container p span{
+    font-size: 24px;
+    font-weight: 600;
+}
+.read-behance {
+    display: inline-block;
+    margin-top: 30px;
+    margin-right: 30px;
+}
+.reading-buttons .read-behance a {
+    display: inline-block;
+    padding: 8px 20px;
+    font-size: 20px;
+    border: #2E2BC3 3px solid;
+    color: #2E2BC3; /* Update the default font color */
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 500;
+  }
+.works .work-2{
+    background-color: bisque;
+}
+
+.max-width {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns with equal width */
+  grid-gap: 20px; /* Spacing between images */
+}
+
+.image-grid img {
+  max-width: 100%; /* Make sure images fit within their container */
+  height: auto; /* Maintain aspect ratio */
+}
+/* mobile */
+@media screen and (min-width: 320px) and (max-width: 347px) {
+    .read-behance {
+      margin-right: 10px; /* Decrease the right margin */
+    }
+  }
+@media (max-width: 1000px) {
+    .works{
+        padding-top: 100px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 30px;
+    }
+    .works .works-container{
+        margin-bottom: 100px;
+        
+    }
+    .works .description{
+        max-width: 100%;
+    }
+    .works .text-and-buttons{
+        max-width: 100%;
+    }
+    .works .max-width .text-2{
+        font-size: 30px;
+        font-weight: 400;
+        margin-bottom: 80px;
+    }
+    .works .works-container{
+        flex-direction: column;
+        
+    }
+    .description .decathlon img{
+        max-width: 100%;
+        padding: 0px;
+    }
+    .text-container h1{
+        font-size: 30px;
+        font-weight: 600;
+        margin-bottom: 20px;
+        padding-top: 20px;
+    }
+    .text-container p{
+        font-size: 20px;
+        font-weight: 400;
+    }
+    .text-container p span{
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+}
+/* tablet */
+@media screen and (min-width: 1001px) and (max-width: 1218px) {
+    .read-behance {
+      margin-right: 10px; /* Decrease the right margin */
+    }
+  }
+@media (min-width: 1001px) and (max-width: 1700px){
+    .works{
+        padding-top: 200px;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-bottom: 0px;
+    }
+    .works .works-container{
+        margin-bottom: 100px;
+        
+    }
+    .works .max-width .text-2{
+        font-size: 30px;
+        font-weight: 400;
+        margin-bottom: 80px;
+    }
+    .description .decathlon img{
+        max-width: 100%;
+        padding-right: 10px;
+    }
+    .text-container h1{
+        font-size: 30px;
+        font-weight: 600;
+        margin-bottom: 20px;
+        padding-top: 20px;
+    }
+    .text-container p{
+        font-size: 20px;
+        font-weight: 400;
+    }
+    .text-container p span{
+        font-size: 20px;
+        font-weight: 600;
+    }
+    
+}
+/*misc section styling*/
+.misc{
+    padding-top: 310px;
+    padding-top: 310px;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-bottom: 0px;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+.misc .max-width{
+    max-width: 100%;
+    padding: 0%;
+}
+.misc .text-2{
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 200px;
+    height: auto;
+}
+.all-images img {
+    max-width: 100% !important;
+    height: auto;
+  }
+/* mobile  */
+@media (max-width: 1000px) {
+    .misc{
+        padding-top: 100px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 30px;
+    }
+    .misc .max-width .text-2{
+        font-size: 30px;
+        font-weight: 400;
+        margin-bottom: 80px;
+    }
+}
+/* tablet */
+@media (min-width: 1001px) and (max-width: 1700px) {
+    .misc{
+        padding-top: 200px;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-bottom: 0px;
+    }
+    .misc .max-width .text-2{
+        font-size: 30px;
+        font-weight: 400;
+        margin-bottom: 80px;
+    }
+}
+  
+/*about section styling*/
+.about{
+    padding-top: 310px;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-bottom: 0px;
+}
+.about .max-width{
+    font-family: 'Hanken Grotesk', sans-serif;
+    max-width: 100%;
+    padding: 0%;
+}
+.about .max-width .text-2{
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 200px;
+}
+.about-description{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.about-description .para{
+    padding-right: 100px;
+    font-size: 24px;
+    font-weight: 400;
+    max-width: 100%;
+}
+.photo img{
+  max-width: 100%;
+}
+/* mobile */
+@media (max-width: 1000px) {
+    .about{
+        padding-top: 100px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 30px;
+    }
+    .about .max-width .text-2{
+        font-size: 30px;
+        font-weight: 400;
+        margin-bottom: 80px;
+    }
+    .about-description{
+        flex-direction: column;
+    }
+    .about-description .para{
+        padding: 0%;
+        font-size: 20px;
+        font-weight: 400;
+        margin-bottom: 40px;
+    }
+}
+/* tablet */
+@media (min-width: 1001px) and (max-width: 1700px) {
+    .about{
+        padding-top: 200px;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-bottom: 0px;
+    }
+    .about .max-width .text-2{
+        font-size: 30px;
+        font-weight: 400;
+        margin-bottom: 80px;
+    }
+    .about-description .para{
+        padding: 0%;
+        font-size: 20px;
+        font-weight: 400;
+        margin-bottom: 40px;
+        margin-right: 20px;
+    }
+}
+
+/* contact styling*/
+.contact{
+    max-width: 100%;
+    padding-top: 310px;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-bottom: 300px;
+}
+.contact .max-width{
+    font-family: 'Hanken Grotesk', sans-serif;
+    padding: 0%;
+}
+.contact .text-2{
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 220px;
+}
+.contact .all-buttonsc{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    max-width: 100%;
+}
+/* CSS code for blue outline circle with white icon on hover */
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55px; /* Adjust the size as needed */
+    height: 55px; /* Adjust the size as needed */
+    border: 3px solid blue; /* Adjust the border color */
+    border-radius: 50%; /* Make it a circle */
+    text-align: center;
+    transition: all 0.3s ease; /* Add smooth transition effect */
+  }
+  
+  .icon svg {
+    fill: blue; /* Set the default fill color to blue */
+  }
+  
+  .icon:hover {
+    background-color: blue; /* Change the background color to blue on hover */
+    border-color: blue; /* Change the border color to blue on hover */
+  }
+  
+  .icon:hover svg {
+    fill: white !important; /* Change the icon color to white on hover */
+  }
+/* mobile */
+@media screen and (max-width: 420px) {
+    .contact .all-buttonsc {
+      flex-direction: column; /* Stack icons vertically */
+      align-items: center; /* Center the icons horizontally */
+    }
+    
+    .contact .all-buttonsc .icon {
+      margin-bottom: 20px; /* Add some spacing between icons */
+    }
+    
+    .contact .all-buttonsc .icon:last-child {
+      margin-bottom: 0; /* Remove bottom margin from the last icon */
+    }
+  }
+  
+  @media (max-width: 1000px) {
+    .contact {
+      padding-top: 100px;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-bottom: 80px;
+    }
+    
+    .contact .max-width .text-2 {
+      font-size: 30px;
+      font-weight: 400;
+      margin-bottom: 80px;
+    }
+    
+    .contact .all-buttonsc {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      max-width: 100%;
+    }
+  }
+/* tablet */
+@media (min-width: 1001px) and (max-width: 1700px) {
+    .contact {
+        padding-top: 200px;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-bottom: 300px;;
+      }
+      
+      .contact .max-width .text-2 {
+        font-size: 30px;
+        font-weight: 400;
+        margin-bottom: 250px;
+      }
+}
