@@ -346,10 +346,10 @@
 
 /*works section styling*/
 .works{
-    padding-top: 310px;
+    padding-top: 200px;
     padding-left: 200px;
     padding-right: 200px;
-    padding-bottom: 0px;
+    padding-bottom: 100px;
 }
 .works .max-width{
     font-family: 'Hanken Grotesk',sans-serif;
@@ -371,17 +371,17 @@
     
 }
 .works .description{
-    max-width: 70%;
+    max-width: 50%;
 }
 .description .decathlon img{
     max-width: 100%;
     padding-right: 40px;
 }
 .works .text-and-buttons{
-    max-width: 30%;
+    max-width: 50%;
 }
 .text-container h1{
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 600;
     margin-bottom: 20px;
     padding-top: 20px;
@@ -525,11 +525,10 @@
 }
 /*misc section styling*/
 .misc{
-    padding-top: 310px;
-    padding-top: 310px;
+    padding-top: 200px;
     padding-left: 200px;
     padding-right: 200px;
-    padding-bottom: 0px;
+    padding-bottom: 100px;
     font-family: 'Hanken Grotesk', sans-serif;
 }
 .misc .max-width{
@@ -577,10 +576,10 @@
   
 /*about section styling*/
 .about{
-    padding-top: 310px;
+    padding-top: 200px;
     padding-left: 200px;
     padding-right: 200px;
-    padding-bottom: 0px;
+    padding-bottom: 100px;
 }
 .about .max-width{
     font-family: 'Hanken Grotesk', sans-serif;
@@ -602,6 +601,9 @@
     font-size: 24px;
     font-weight: 400;
     max-width: 100%;
+}
+p{
+  margin-bottom: 20px;
 }
 .photo img{
   max-width: 100%;
@@ -654,10 +656,10 @@
 /* contact styling*/
 .contact{
     max-width: 100%;
-    padding-top: 310px;
+    padding-top: 200px;
     padding-left: 200px;
     padding-right: 200px;
-    padding-bottom: 300px;
+    padding-bottom: 400px;
 }
 .contact .max-width{
     font-family: 'Hanken Grotesk', sans-serif;
