@@ -346,10 +346,10 @@
 
 /*works section styling*/
 .works{
-    padding-top: 50px;
+    padding-top: 310px;
     padding-left: 200px;
     padding-right: 200px;
-    padding-bottom: 250px;
+    padding-bottom: 0px;
 }
 .works .max-width{
     font-family: 'Hanken Grotesk',sans-serif;
@@ -525,11 +525,11 @@
 }
 /*misc section styling*/
 .misc{
-    padding-top: 50px;
+    padding-top: 310px;
     padding-top: 310px;
     padding-left: 200px;
     padding-right: 200px;
-    padding-bottom: 250px;
+    padding-bottom: 0px;
     font-family: 'Hanken Grotesk', sans-serif;
 }
 .misc .max-width{
@@ -577,10 +577,10 @@
   
 /*about section styling*/
 .about{
-    padding-top: 50px;
+    padding-top: 310px;
     padding-left: 200px;
     padding-right: 200px;
-    padding-bottom: 250px;
+    padding-bottom: 0px;
 }
 .about .max-width{
     font-family: 'Hanken Grotesk', sans-serif;
@@ -654,10 +654,10 @@
 /* contact styling*/
 .contact{
     max-width: 100%;
-    padding-top: 50px;
+    padding-top: 310px;
     padding-left: 200px;
     padding-right: 200px;
-    padding-bottom: 250px;
+    padding-bottom: 0px;
 }
 .contact .max-width{
     font-family: 'Hanken Grotesk', sans-serif;
