@@ -67,10 +67,6 @@
   color: #2E2BC3;
 }
 
-
-
-
-
 .navbar .menu li {
   list-style: none;
   display: inline-block;
@@ -350,10 +346,10 @@
 
 /*works section styling*/
 .works{
-    padding-top: 310px;
+    padding-top: 50px;
     padding-left: 200px;
     padding-right: 200px;
-    padding-bottom: 0px;
+    padding-bottom: 250px;
 }
 .works .max-width{
     font-family: 'Hanken Grotesk',sans-serif;
@@ -529,11 +525,11 @@
 }
 /*misc section styling*/
 .misc{
-    padding-top: 310px;
+    padding-top: 50px;
     padding-top: 310px;
     padding-left: 200px;
     padding-right: 200px;
-    padding-bottom: 0px;
+    padding-bottom: 250px;
     font-family: 'Hanken Grotesk', sans-serif;
 }
 .misc .max-width{
@@ -581,10 +577,10 @@
   
 /*about section styling*/
 .about{
-    padding-top: 310px;
+    padding-top: 50px;
     padding-left: 200px;
     padding-right: 200px;
-    padding-bottom: 0px;
+    padding-bottom: 250px;
 }
 .about .max-width{
     font-family: 'Hanken Grotesk', sans-serif;
@@ -658,10 +654,10 @@
 /* contact styling*/
 .contact{
     max-width: 100%;
-    padding-top: 310px;
+    padding-top: 50px;
     padding-left: 200px;
     padding-right: 200px;
-    padding-bottom: 300px;
+    padding-bottom: 250px;
 }
 .contact .max-width{
     font-family: 'Hanken Grotesk', sans-serif;
