@@ -289,7 +289,8 @@
       width: 100%;
     }
     .all-buttons {
-        padding-top: 50px;
+        padding-top: 30px;
+        padding-bottom: 30px;
         justify-content: center;
     }
     .all-buttons .social{
@@ -384,7 +385,7 @@
     font-size: 30px;
     font-weight: 600;
     margin-bottom: 20px;
-    padding-top: 20px;
+    padding-top: 0px;
 }
 .text-container p{
     font-size: 24px;
@@ -478,6 +479,9 @@
     .text-container p span{
         font-size: 20px;
         font-weight: 600;
+    }
+    .read-behance {
+      margin-top: 20px;
     }
 
 }
