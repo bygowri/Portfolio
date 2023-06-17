@@ -687,19 +687,19 @@ p{
     align-items: center;
     width: 55px; /* Adjust the size as needed */
     height: 55px; /* Adjust the size as needed */
-    border: 3px solid blue; /* Adjust the border color */
+    border: 3px solid #2E2BC3; /* Adjust the border color */
     border-radius: 50%; /* Make it a circle */
     text-align: center;
     transition: all 0.3s ease; /* Add smooth transition effect */
   }
   
   .icon svg {
-    fill: blue; /* Set the default fill color to blue */
+    fill: #2E2BC3; /* Set the default fill color to blue */
   }
   
   .icon:hover {
-    background-color: blue; /* Change the background color to blue on hover */
-    border-color: blue; /* Change the border color to blue on hover */
+    background-color: #2E2BC3; /* Change the background color to blue on hover */
+    border-color: #2E2BC3; /* Change the border color to blue on hover */
   }
   
   .icon:hover svg {
