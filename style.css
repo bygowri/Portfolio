@@ -189,14 +189,14 @@
     margin-bottom: 10px;
 }
 .left-side .all-text .text-2{
-    font-size: 40px;
+    font-size: 80px;
     font-weight: 500;
 }
 .left-side .all-text .text-2 span{
     font-weight: 700;
 }
 .left-side .all-text .text-3{
-    font-size: 24px;
+    font-size: 26px;
     font-weight: 600;
     margin-bottom: 25px;
 }
@@ -288,6 +288,15 @@
     .left-side .all-buttons {
       width: 100%;
     }
+    .left-side .all-text .text-2{
+      font-size: 40px;
+      font-weight: 500;
+    }
+    .left-side .all-text .text-3{
+      font-size: 24px;
+      font-weight: 600;
+      margin-bottom: 25px;
+  }
     .all-buttons {
         padding-top: 30px;
         padding-bottom: 30px;
@@ -397,7 +406,7 @@
 }
 .read-behance {
     display: inline-block;
-    margin-top: 30px;
+    margin-top: 0px;
     margin-right: 30px;
 }
 .reading-buttons .read-behance a {
