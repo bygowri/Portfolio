@@ -15,10 +15,11 @@
   position: fixed;
   top: 0;
   width: 100%;
-  padding: 10px 200px; /* Add padding to the sides */
+  padding: 10px 60px; /* Add padding to the sides */
   background-color: white;
   font-family: 'Hanken Grotesk', sans-serif;
   z-index: 3; /* Add a higher z-index value */
+  border-bottom: black solid 1px;
 }
 
 .navbar .max-width {
@@ -31,15 +32,30 @@
 
 .navbar .top {
   display: flex;
-  justify-content: space-between;
   width: 100%;
+  align-items: center;
+  justify-content: space-between;
 }
-
+.top .lefthome{
+  display: inline-flex;
+  align-items: center;
+}
+.home{
+  display: inline-flex;
+}
 .navbar .home a {
   font-size: 35px;
   font-weight: 700;
   color: black;
   cursor: pointer;
+  margin-right: 50px;
+}
+.mailto a{
+  text-decoration: none;
+  color: #2E2BC3;
+}
+.mailtomobile{
+  display: none;
 }
 .navbar .menu {
   display: flex;
@@ -78,7 +94,7 @@
   color: black;
   font-size: 20px;
   font-weight: 500;
-  margin: 0 30px;
+  margin-left: 50px;
   position: relative;
 }
 
@@ -117,7 +133,13 @@
   }
 
   .navbar {
-    padding: 10px 20px; /* Add padding to the sides */
+    padding: 5px 20px; /* Add padding to the sides */
+    align-items: center;
+  }
+  .navbar .top .lefthome{
+    width: 100%;
+    justify-content: space-between;
+    padding-right: 20px;
   }
   .navbar .home a {
     font-size: 32px;
@@ -125,6 +147,15 @@
     color: black !important;
     cursor: pointer;
   }
+  .navbar .home a {
+    margin-right: 30px;
+  }
+  .mailto{
+    display: none;
+  }
+  /* .mailtomobile{
+    display: block;
+  } */
 
   .navbar .menu {
     display: none;
@@ -160,7 +191,7 @@
 /* tablet */
 @media (min-width: 1001px) and (max-width: 1700px) {
     .navbar {
-        padding: 10px 40px; /* Add padding to the sides */
+        padding: 5px 40px; /* Add padding to the sides */
       }
 }
 
@@ -180,7 +211,7 @@
 }
 .left-side{
     max-width: 50%;
-    padding-top: 350px;
+    padding-top: 300px;
     padding-right: 80px;
 }
 .left-side .all-text .text-1{
@@ -189,7 +220,7 @@
     margin-bottom: 10px;
 }
 .left-side .all-text .text-2{
-    font-size: 80px;
+    font-size: 70px;
     font-weight: 500;
 }
 .left-side .all-text .text-2 span{
@@ -221,7 +252,7 @@
     background-color:#2E2BC3;
     color: white;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 2px;
     font-weight: 500;
 }
 .all-buttons .social{
@@ -413,10 +444,10 @@
     display: inline-block;
     padding: 8px 20px;
     font-size: 20px;
-    border: #2E2BC3 3px solid;
+    border: #2E2BC3 2px solid;
     color: #2E2BC3; /* Update the default font color */
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 2px;
     font-weight: 500;
   }
 .works .work-2{
@@ -696,7 +727,7 @@ p{
     align-items: center;
     width: 55px; /* Adjust the size as needed */
     height: 55px; /* Adjust the size as needed */
-    border: 3px solid #2E2BC3; /* Adjust the border color */
+    border: 2px solid #2E2BC3; /* Adjust the border color */
     border-radius: 50%; /* Make it a circle */
     text-align: center;
     transition: all 0.3s ease; /* Add smooth transition effect */
