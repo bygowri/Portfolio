@@ -92,6 +92,7 @@ document.addEventListener('DOMContentLoaded', function() {
   for (var i = 0; i < miscImages.length; i++) {
     miscImages[i].addEventListener('touchstart', disableTouchHold);
   }
+  
 });
 
 
