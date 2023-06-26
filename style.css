@@ -97,6 +97,26 @@
   position: relative;
 }
 
+/* menu transition */
+/* .navbar .menu li::after {
+  content: '';
+  height: 3px;
+  width: 0%;
+  background-color: #2E2BC3;
+  position: absolute;
+  left: 0%;
+  bottom: -5px;
+  transition: 0.5s;
+}
+
+.navbar .menu li:hover:after {
+  width: 100%;
+}
+
+.navbar .menu li:active:after {
+  width: 100%;
+} */
+
 /* mobile */
 /* Position toggle button on the right */
 .toggle-button {
@@ -132,6 +152,9 @@
   .mailto{
     display: none;
   }
+  /* .mailtomobile{
+    display: block;
+  } */
 
   .navbar .menu {
     display: none;
@@ -378,7 +401,7 @@
 .works .max-width .text-2{
     font-size: 40px;
     font-weight: 400;
-    margin-bottom: 80px;
+    margin-bottom: 200px;
 }
 .works .topic-1{
     background-color: white;
@@ -390,30 +413,12 @@
     
 }
 .works .description{
-    max-width: 60%;
+    max-width: 50%;
 }
 .description .decathlon img{
     max-width: 100%;
     padding-right: 40px;
 }
-.description .decathlon1 img{
-  max-width: 100%;
-  padding-right: 40px;
-}
-/* CSS for the hover effect */
-.image .decathlon1 img {
-  display: none;
-}
-
-.image:hover .decathlon img {
-  display: none;
-}
-
-.image:hover .decathlon1 img {
-  display: inline-block;
-}
-
-
 .works .text-and-buttons{
     max-width: 50%;
 }
@@ -422,7 +427,6 @@
     font-weight: 600;
     margin-bottom: 20px;
     padding-top: 0px;
-    border-bottom: black solid 1px;
 }
 .text-container p{
     font-size: 24px;
@@ -467,36 +471,6 @@
   max-width: 100%; /* Make sure images fit within their container */
   height: auto; /* Maintain aspect ratio */
 }
-.otherprojects{
-  margin-top: 200px;
-}
-.row-2 {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 50px;
-}
-
-.work-container {
-  width: 100%;
-}
-
-.text-container {
-  margin-bottom: 0px;
-}
-
-.image-container img {
-  width: 100%;
-  height: auto;
-  max-width: 100%;
-}
-.future-artifacts img{
-  max-width: 100%;
-}
-.a1{
-  margin-bottom: 200px;
-}
-
 /* mobile */
 @media screen and (min-width: 320px) and (max-width: 347px) {
     .read-behance {
@@ -550,11 +524,6 @@
     .read-behance {
       margin-top: 0px;
     }
-    .row-2{
-      flex-direction: column;
-    }
-    
-
 
 }
 /* tablet */
@@ -599,6 +568,56 @@
     }
     
 }
+/*misc section styling*/
+.misc{
+    padding-top: 150px;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-bottom: 100px;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+.misc .max-width{
+    max-width: 100%;
+    padding: 0%;
+}
+.misc .text-2{
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 200px;
+    height: auto;
+}
+.all-images img {
+    max-width: 100% !important;
+    height: auto;
+  }
+/* mobile  */
+@media (max-width: 1000px) {
+    .misc{
+        padding-top: 100px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 30px;
+    }
+    .misc .max-width .text-2{
+        font-size: 30px;
+        font-weight: 400;
+        margin-bottom: 80px;
+    }
+}
+/* tablet */
+@media (min-width: 1001px) and (max-width: 1700px) {
+    .misc{
+        padding-top: 200px;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-bottom: 0px;
+    }
+    .misc .max-width .text-2{
+        font-size: 30px;
+        font-weight: 400;
+        margin-bottom: 80px;
+    }
+}
   
 /*about section styling*/
 .about{
@@ -615,7 +634,7 @@
 .about .max-width .text-2{
     font-size: 40px;
     font-weight: 400;
-    margin-bottom: 80px;
+    margin-bottom: 200px;
 }
 .about-description{
     display: flex;
@@ -682,7 +701,7 @@ p{
 /* contact styling*/
 .contact{
     max-width: 100%;
-    padding-top: 450px;
+    padding-top: 150px;
     padding-left: 200px;
     padding-right: 200px;
     padding-bottom: 400px;
