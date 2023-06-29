@@ -474,7 +474,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 50px;
+  gap: 80px;
 }
 
 .work-container {
@@ -483,6 +483,11 @@
 
 .text-container {
   margin-bottom: 0px;
+}
+.otherprojects .text-container h2{
+  margin-top: 10px;
+  border-bottom: 1px solid;
+  margin-bottom: 20px;
 }
 
 .image-container img {
