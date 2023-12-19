@@ -784,3 +784,10 @@ p{
         margin-bottom: 250px;
       }
 }
+
+/* footer */
+footer {
+  text-align: center;
+  font-family: 'Hanken Grotesk';
+  color: grey;
+}
