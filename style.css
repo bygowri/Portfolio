@@ -191,6 +191,8 @@
     max-width: 50%;
     padding-top: 300px;
     padding-right: 80px;
+    padding-left: 80px;
+    background-image: url(portfolioimages/bg.jpg);
 }
 .left-side .all-text .text-1{
     font-size: 24px;
@@ -291,6 +293,8 @@
       padding-top: 0;
       padding-right: 0;
       max-width: 100%;
+      padding-left: 0%;
+      background-image: none;
     }
     
     .left-side .all-text,
